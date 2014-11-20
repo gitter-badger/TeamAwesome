@@ -165,6 +165,7 @@
 		580FB89C1A1E990500A465D2 /* PlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 580FB8981A1E990500A465D2 /* PlaybackViewController.m */; };
 		580FB89D1A1E990500A465D2 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 580FB8991A1E990500A465D2 /* KeyboardViewController.m */; };
 		580FB89E1A1E990500A465D2 /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580FB89A1A1E990500A465D2 /* KeyboardViewController.xib */; };
+		5883C46F1A1EA21B0019FAF6 /* MusicNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 5883C46E1A1EA21B0019FAF6 /* MusicNote.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -516,6 +517,8 @@
 		580FB8991A1E990500A465D2 /* KeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
 		580FB89A1A1E990500A465D2 /* KeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
 		580FB89B1A1E990500A465D2 /* PlaybackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaybackViewController.h; sourceTree = "<group>"; };
+		5883C46D1A1EA21B0019FAF6 /* MusicNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicNote.h; sourceTree = "<group>"; };
+		5883C46E1A1EA21B0019FAF6 /* MusicNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicNote.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1310,6 +1313,8 @@
 			children = (
 				17AE207F1A1E8EF200BC3C36 /* TADocument.h */,
 				17AE20801A1E8EF200BC3C36 /* TADocument.m */,
+				5883C46D1A1EA21B0019FAF6 /* MusicNote.h */,
+				5883C46E1A1EA21B0019FAF6 /* MusicNote.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1508,6 +1513,7 @@
 				179047241A1E881A00615742 /* AKMandolin.m in Sources */,
 				1790476D1A1E881A00615742 /* AKExponentialCurvesTable.m in Sources */,
 				179046FC1A1E881A00615742 /* AKMinAudio.m in Sources */,
+				5883C46F1A1EA21B0019FAF6 /* MusicNote.m in Sources */,
 				179047041A1E881A00615742 /* AKTableValueControl.m in Sources */,
 				179047061A1E881A00615742 /* AKCrossSynthesis.m in Sources */,
 				1790476A1A1E881A00615742 /* AKAdditiveCosineTable.m in Sources */,

@@ -15,7 +15,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *notePositionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *currentNoteLabel;
-@property (weak, nonatomic) IBOutlet KeyboardViewController *keyboardView;
+@property (weak, nonatomic) IBOutlet UIView *keyboardView;
+@property (strong, nonatomic) KeyboardViewController *keyboardVC;
 
 @end
 
@@ -24,15 +25,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    KeyboardViewController *keyboardVC = [[KeyboardViewController alloc] init];
-    [self addChildViewController:keyboardVC];
-    [self.keyboardView.view addSubview:keyboardVC.view];
-    [keyboardVC didMoveToParentViewController:self];
+    self.keyboardVC = [[KeyboardViewController alloc] init];
+    [self addChildViewController:self.keyboardVC];
+    [self.keyboardView addSubview:self.keyboardVC.view];
+    [self.keyboardVC didMoveToParentViewController:self];
 }
 
 - (IBAction)notePositionStepperTapped:(UIStepper *)stepper {
     self.notePosition = stepper.value;
-    self.keyboardView.counter = stepper.value;
+    self.keyboardVC.counter = stepper.value;
     self.notePositionLabel.text = [NSString stringWithFormat:@"Note Position: %ld/16", (long)self.notePosition];
 }
 

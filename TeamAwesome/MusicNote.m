@@ -55,29 +55,29 @@
 - (float)frequencyForNoteType:(NoteType)noteType {
     switch (noteType) {
         case NoteTypeA:
-            return 0.f;
+            return 440.00;
         case NoteTypeASharp:
-            return 0.f;
+            return 466.16;
         case NoteTypeB:
-            return 0.f;
+            return 493.88;
         case NoteTypeC:
-            return 0.f;
+            return 261.83;
         case NoteTypeCSharp:
-            return 0.f;
+            return 277.18;
         case NoteTypeD:
-            return 0.f;
+            return 293.66;
         case NoteTypeDSharp:
-            return 0.f;
+            return 311.13;
         case NoteTypeE:
-            return 0.f;
+            return 329.63;
         case NoteTypeF:
-            return 0.f;
+            return 349.23;
         case NoteTypeFSharp:
-            return 0.f;
+            return 369.99;
         case NoteTypeG:
-            return 0.f;
+            return 392.00;
         case NoteTypeGSharp:
-            return 0.f;
+            return 415.30;
         case NoteTypeRest:
             return 0.f;
     }

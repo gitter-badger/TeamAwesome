@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TADocument.h"
 
 @interface PlaybackViewController : UIViewController
+
+@property (strong, nonatomic) TADocument *document;
+
 
 @end

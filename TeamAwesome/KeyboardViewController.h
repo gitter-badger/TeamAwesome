@@ -20,7 +20,6 @@
 
 @interface KeyboardViewController : UIViewController
 
-@property (strong, nonatomic) TADocument *document;
 @property (weak, nonatomic) id<KeyboardViewControllerDelegate> delegate;
 
 @end

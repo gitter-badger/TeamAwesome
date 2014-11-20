@@ -29,9 +29,6 @@
 		179046ED1A1E881A00615742 /* libcsound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 179045AB1A1E881A00615742 /* libcsound.a */; };
 		179046EE1A1E881A00615742 /* libsndfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 179045AC1A1E881A00615742 /* libsndfile.a */; };
 		179046EF1A1E881A00615742 /* LICENSE.TXT in Resources */ = {isa = PBXBuildFile; fileRef = 179045AD1A1E881A00615742 /* LICENSE.TXT */; };
-		179046F01A1E881A00615742 /* AKTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 179045B01A1E881A00615742 /* AKTools.m */; };
-		179046F11A1E881A00615742 /* CsoundObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 179045B31A1E881A00615742 /* CsoundObj.m */; };
-		179046F21A1E881A00615742 /* AudioKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179045B51A1E881A00615742 /* AudioKit.swift */; };
 		179046F31A1E881A00615742 /* AKParameter+Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = 179045B81A1E881A00615742 /* AKParameter+Operation.m */; };
 		179046F41A1E881A00615742 /* AKTrackedAmplitude.m in Sources */ = {isa = PBXBuildFile; fileRef = 179045BB1A1E881A00615742 /* AKTrackedAmplitude.m */; };
 		179046F51A1E881A00615742 /* AKTrackedAmplitudeFromFSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 179045BD1A1E881A00615742 /* AKTrackedAmplitudeFromFSignal.m */; };
@@ -244,11 +241,6 @@
 		179045AB1A1E881A00615742 /* libcsound.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcsound.a; sourceTree = "<group>"; };
 		179045AC1A1E881A00615742 /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsndfile.a; sourceTree = "<group>"; };
 		179045AD1A1E881A00615742 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
-		179045AF1A1E881A00615742 /* AKTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTools.h; sourceTree = "<group>"; };
-		179045B01A1E881A00615742 /* AKTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTools.m; sourceTree = "<group>"; };
-		179045B21A1E881A00615742 /* CsoundObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsoundObj.h; sourceTree = "<group>"; };
-		179045B31A1E881A00615742 /* CsoundObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CsoundObj.m; sourceTree = "<group>"; };
-		179045B51A1E881A00615742 /* AudioKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioKit.swift; sourceTree = "<group>"; };
 		179045B71A1E881A00615742 /* AKParameter+Operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AKParameter+Operation.h"; sourceTree = "<group>"; };
 		179045B81A1E881A00615742 /* AKParameter+Operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AKParameter+Operation.m"; sourceTree = "<group>"; };
 		179045BA1A1E881A00615742 /* AKTrackedAmplitude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTrackedAmplitude.h; sourceTree = "<group>"; };
@@ -645,8 +637,6 @@
 			isa = PBXGroup;
 			children = (
 				179045881A1E881900615742 /* iOS */,
-				179045AE1A1E881A00615742 /* OSX */,
-				179045B41A1E881A00615742 /* Swift */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -721,33 +711,6 @@
 				179045AC1A1E881A00615742 /* libsndfile.a */,
 			);
 			path = libs;
-			sourceTree = "<group>";
-		};
-		179045AE1A1E881A00615742 /* OSX */ = {
-			isa = PBXGroup;
-			children = (
-				179045AF1A1E881A00615742 /* AKTools.h */,
-				179045B01A1E881A00615742 /* AKTools.m */,
-				179045B11A1E881A00615742 /* csound-OSX */,
-			);
-			path = OSX;
-			sourceTree = "<group>";
-		};
-		179045B11A1E881A00615742 /* csound-OSX */ = {
-			isa = PBXGroup;
-			children = (
-				179045B21A1E881A00615742 /* CsoundObj.h */,
-				179045B31A1E881A00615742 /* CsoundObj.m */,
-			);
-			path = "csound-OSX";
-			sourceTree = "<group>";
-		};
-		179045B41A1E881A00615742 /* Swift */ = {
-			isa = PBXGroup;
-			children = (
-				179045B51A1E881A00615742 /* AudioKit.swift */,
-			);
-			path = Swift;
 			sourceTree = "<group>";
 		};
 		179045B61A1E881A00615742 /* Operations */ = {
@@ -1424,7 +1387,6 @@
 				179046E91A1E881A00615742 /* AKAudioAnalyzer.m in Sources */,
 				1790472A1A1E881A00615742 /* AKCrunch.m in Sources */,
 				1790476E1A1E881A00615742 /* AKFTable.m in Sources */,
-				179046F01A1E881A00615742 /* AKTools.m in Sources */,
 				1790472F1A1E881A00615742 /* AKSleighbells.m in Sources */,
 				179046FA1A1E881A00615742 /* AKMaxAudio.m in Sources */,
 				179047621A1E881A00615742 /* AKPanner.m in Sources */,
@@ -1478,7 +1440,6 @@
 				179047471A1E881A00615742 /* AKVariableDelay.m in Sources */,
 				179047221A1E881A00615742 /* AKStruckMetalBar.m in Sources */,
 				179047661A1E881A00615742 /* AKControl.m in Sources */,
-				179046F21A1E881A00615742 /* AudioKit.swift in Sources */,
 				179046F41A1E881A00615742 /* AKTrackedAmplitude.m in Sources */,
 				179047541A1E881A00615742 /* AKResonantFilter.m in Sources */,
 				179046E81A1E881A00615742 /* AKSequence.m in Sources */,
@@ -1533,7 +1494,6 @@
 				179047211A1E881A00615742 /* AKPluckedString.m in Sources */,
 				179047121A1E881A00615742 /* AKLinearAudioEnvelope.m in Sources */,
 				1790470A1A1E881A00615742 /* AKPhaseLockedVocoder.m in Sources */,
-				179046F11A1E881A00615742 /* CsoundObj.m in Sources */,
 				179047561A1E881A00615742 /* AKVariableFrequencyResponseBandPassFilter.m in Sources */,
 				179047051A1E881A00615742 /* AKAudioFromFSignal.m in Sources */,
 				179047101A1E881A00615742 /* AKLinearADSRAudioEnvelope.m in Sources */,

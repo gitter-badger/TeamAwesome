@@ -26,7 +26,7 @@
 
 -(void)loadInstrument:(NSDictionary *)instrumentDef;
 -(void)saveInstrument:(NSDictionary *)instrumentDef;
--(void)playNote:(AKInstrumentProperty* )freq;
+-(void)playNote:(float)freq;
 -(void)silence;
 
 @end

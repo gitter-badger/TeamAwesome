@@ -41,10 +41,10 @@
         [self addProperty:_carrierMultValue];
         [self addProperty:_modIndexValue];
         [self addProperty:_amplitudeValue];
-        _attackValue = 0.1;
-        _decayValue = 0.5;
-        _sustainValue  = 0.1;
-        _releaseValue = 0.5;
+        _attackValue = 0.25;
+        _decayValue = 0.25;
+        _sustainValue  = 0.0;
+        _releaseValue = 0.0;
         
     
         
@@ -93,10 +93,10 @@
 {
     
 }
--(void)playNote:(AKInstrumentProperty*)freq
+-(void)playNote:(float)freq
 {
     AKInstrumentProperty *p = (AKInstrumentProperty *)_frequencyValue;
-    p = freq;
+    p.value = freq;
     [self play];
 }
 -(void)silence

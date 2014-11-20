@@ -10,7 +10,6 @@
 
 @interface KeyboardViewController ()
 
-@property (nonatomic) int counter;
 @property (nonatomic) NSMutableArray *tempSounds;
 
 // copies the text from the view into the document
@@ -21,7 +20,7 @@
 @end
 
 @implementation KeyboardViewController
-@synthesize document;
+@synthesize document, counter;
 
 - (void)viewDidLoad {
     [super viewDidLoad];

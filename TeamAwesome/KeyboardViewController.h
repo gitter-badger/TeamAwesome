@@ -12,5 +12,6 @@
 @interface KeyboardViewController : UIViewController
 
 @property (strong, nonatomic) TADocument *document;
+@property (nonatomic) int counter;
 
 @end

@@ -30,4 +30,6 @@ typedef NS_ENUM(NSInteger, NoteType) {
 @property (strong, nonatomic) NSString *noteName;
 @property (assign, nonatomic) float frequency;
 
+- (instancetype)initWithNoteType:(NoteType)noteType;
+
 @end

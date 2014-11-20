@@ -42,50 +42,62 @@
 }
 
 - (IBAction)cKeyTapped {
+    [self.delegate didSelectNote:[[MusicNote alloc] initWithNoteType:NoteTypeC]];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"c"];
 }
 
 - (IBAction)cSharpKeyTapped {
+    [self.delegate didSelectNote:[[MusicNote alloc] initWithNoteType:NoteTypeCSharp]];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"c#"];
 }
 
 - (IBAction)dKeyTapped {
+    [self.delegate didSelectNote:[[MusicNote alloc] initWithNoteType:NoteTypeD]];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"d"];
 }
 
 - (IBAction)dSharpKeyTapped {
+    [self.delegate didSelectNote:[[MusicNote alloc] initWithNoteType:NoteTypeDSharp]];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"c#"];
 }
 
 - (IBAction)eKeyTapped {
+    [self.delegate didSelectNote:[[MusicNote alloc] initWithNoteType:NoteTypeE]];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"e"];
 }
 
 - (IBAction)fKeyTapped {
+    [self.delegate didSelectNote:[[MusicNote alloc] initWithNoteType:NoteTypeF]];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"f"];
 }
 
 - (IBAction)fSharpKeyTapped {
+    [self.delegate didSelectNote:[[MusicNote alloc] initWithNoteType:NoteTypeFSharp]];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"f#"];
 }
 
 - (IBAction)gKeyTapped {
+    [self.delegate didSelectNote:[[MusicNote alloc] initWithNoteType:NoteTypeG]];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"g"];
 }
 
 - (IBAction)gSharpKeyTapped {
+    [self.delegate didSelectNote:[[MusicNote alloc] initWithNoteType:NoteTypeGSharp]];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"g#"];
 }
 
 - (IBAction)aKeyTapped {
+    [self.delegate didSelectNote:[[MusicNote alloc] initWithNoteType:NoteTypeA]];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"a"];
 }
 
 - (IBAction)aSharpKeyTapped {
+    [self.delegate didSelectNote:[[MusicNote alloc] initWithNoteType:NoteTypeASharp]];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"a#"];
 }
 
 - (IBAction)bKeyTapped {
+    [self.delegate didSelectNote:[[MusicNote alloc] initWithNoteType:NoteTypeB]];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"b"];
 }
 

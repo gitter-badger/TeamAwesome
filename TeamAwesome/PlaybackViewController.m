@@ -8,10 +8,13 @@
 
 #import "PlaybackViewController.h"
 #import "KeyboardViewController.h"
+#import "MusicNote.h"
 
-@interface PlaybackViewController ()
+@interface PlaybackViewController () <KeyboardViewControllerDelegate>
 
 @property (assign, nonatomic) NSInteger notePosition;
+@property (strong, nonatomic) NSMutableArray *notes;
+@property (strong, nonatomic) KeyboardViewController *keyboardController;
 
 @property (weak, nonatomic) IBOutlet UILabel *notePositionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *currentNoteLabel;
@@ -24,19 +27,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    KeyboardViewController *keyboardVC = [[KeyboardViewController alloc] init];
-    [self addChildViewController:keyboardVC];
-    [self.keyboardView addSubview:keyboardVC.view];
-    [keyboardVC didMoveToParentViewController:self];
+    self.keyboardController = [[KeyboardViewController alloc] init];
+    self.keyboardController.delegate = self;
+    [self addChildViewController:self.keyboardController];
+    [self.keyboardView addSubview:self.keyboardController.view];
+    [self.keyboardController didMoveToParentViewController:self];
+    
+    // Initialize notes with all rests
+    self.notes = [[NSMutableArray alloc] initWithCapacity:16];
+    for (int i=0; i<self.notes.count; i++) {
+        [self.notes addObject:[[MusicNote alloc] initWithNoteType:NoteTypeRest]];
+    }
 }
 
 - (IBAction)notePositionStepperTapped:(UIStepper *)stepper {
     self.notePosition = stepper.value;
-    self.notePositionLabel.text = [NSString stringWithFormat:@"Note Position: %ld/16", (long)self.notePosition];
+    [self updateCurrentNoteAndPosition];
 }
 
 - (IBAction)deleteNoteTapped:(id)sender {
-    
+    self.notes[self.notePosition] = [[MusicNote alloc] initWithNoteType:NoteTypeRest];
+    [self updateCurrentNoteAndPosition];
 }
 
 - (IBAction)playNoteTapped:(id)sender {
@@ -45,6 +56,17 @@
 
 - (IBAction)saveSongTapped:(id)sender {
     
+}
+
+- (void)didSelectNote:(MusicNote *)note {
+    self.notes[self.notePosition] = note;
+}
+
+- (void)updateCurrentNoteAndPosition {
+    self.notePositionLabel.text = [NSString stringWithFormat:@"Note Position: %ld/16", (long)self.notePosition];
+    
+    MusicNote *currentNote = self.notes[self.notePosition];
+    self.currentNoteLabel.text = [NSString stringWithFormat:@"Current Note: %@", currentNote.noteName];
 }
 
 @end

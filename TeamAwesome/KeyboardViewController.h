@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TADocument.h"
 
 @interface KeyboardViewController : UIViewController
+
+@property (strong, nonatomic) TADocument *document;
 
 @end

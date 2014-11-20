@@ -70,7 +70,7 @@
 
 - (IBAction)dSharpKeyTapped {
     [newInstrument playNote:311.13];
-    [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"c#"];
+    [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"d#"];
 }
 
 - (IBAction)eKeyTapped {

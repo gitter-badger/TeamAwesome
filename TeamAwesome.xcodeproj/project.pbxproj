@@ -165,6 +165,7 @@
 		580FB89C1A1E990500A465D2 /* PlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 580FB8981A1E990500A465D2 /* PlaybackViewController.m */; };
 		580FB89D1A1E990500A465D2 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 580FB8991A1E990500A465D2 /* KeyboardViewController.m */; };
 		580FB89E1A1E990500A465D2 /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580FB89A1A1E990500A465D2 /* KeyboardViewController.xib */; };
+		E2119D681A1EA53B005F2ECF /* Instrument.m in Sources */ = {isa = PBXBuildFile; fileRef = E2119D671A1EA53B005F2ECF /* Instrument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -516,6 +517,8 @@
 		580FB8991A1E990500A465D2 /* KeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
 		580FB89A1A1E990500A465D2 /* KeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
 		580FB89B1A1E990500A465D2 /* PlaybackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaybackViewController.h; sourceTree = "<group>"; };
+		E2119D661A1EA53B005F2ECF /* Instrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instrument.h; sourceTree = "<group>"; };
+		E2119D671A1EA53B005F2ECF /* Instrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instrument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -559,6 +562,8 @@
 		1785C3041A1E84B100E7099D /* TeamAwesome */ = {
 			isa = PBXGroup;
 			children = (
+				E2119D661A1EA53B005F2ECF /* Instrument.h */,
+				E2119D671A1EA53B005F2ECF /* Instrument.m */,
 				17AE20771A1E8C2600BC3C36 /* Store */,
 				1785C3091A1E84B100E7099D /* AppDelegate.h */,
 				1785C30A1A1E84B100E7099D /* AppDelegate.m */,
@@ -1523,6 +1528,7 @@
 				179046FB1A1E881A00615742 /* AKMaxControl.m in Sources */,
 				179046E41A1E881A00615742 /* AKMidi.m in Sources */,
 				1790474B1A1E881A00615742 /* AKCombFilter.m in Sources */,
+				E2119D681A1EA53B005F2ECF /* Instrument.m in Sources */,
 				1790471F1A1E881A00615742 /* AKPhasingControl.m in Sources */,
 				179047181A1E881A00615742 /* AKFMOscillator.m in Sources */,
 				179047011A1E881A00615742 /* AKSum.m in Sources */,

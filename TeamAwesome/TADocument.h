@@ -6,8 +6,12 @@
 //  Copyright (c) 2014 Team Awesome. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface TADocument : NSObject
+extern NSString *kBNRDocumentContentsDidUpdateNotification;
+
+@interface TADocument : UIDocument
+
+@property (copy, nonatomic) NSArray *contents;
 
 @end

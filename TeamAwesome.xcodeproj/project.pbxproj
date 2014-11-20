@@ -162,7 +162,7 @@
 		179047751A1E881A00615742 /* AKNoteProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 179046E01A1E881A00615742 /* AKNoteProperty.m */; };
 		17AE20761A1E8B8F00BC3C36 /* TAPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE20751A1E8B8F00BC3C36 /* TAPreferences.m */; };
 		17AE207A1A1E8C4600BC3C36 /* TADocumentStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE20791A1E8C4600BC3C36 /* TADocumentStore.m */; };
-		17AE207D1A1E8DDA00BC3C36 /* TADocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE207C1A1E8DDA00BC3C36 /* TADocument.m */; };
+		17AE20811A1E8EF200BC3C36 /* TADocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE20801A1E8EF200BC3C36 /* TADocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -509,8 +509,8 @@
 		17AE20751A1E8B8F00BC3C36 /* TAPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPreferences.m; sourceTree = "<group>"; };
 		17AE20781A1E8C4600BC3C36 /* TADocumentStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADocumentStore.h; sourceTree = "<group>"; };
 		17AE20791A1E8C4600BC3C36 /* TADocumentStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADocumentStore.m; sourceTree = "<group>"; };
-		17AE207B1A1E8DDA00BC3C36 /* TADocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADocument.h; sourceTree = "<group>"; };
-		17AE207C1A1E8DDA00BC3C36 /* TADocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADocument.m; sourceTree = "<group>"; };
+		17AE207F1A1E8EF200BC3C36 /* TADocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADocument.h; sourceTree = "<group>"; };
+		17AE20801A1E8EF200BC3C36 /* TADocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1300,8 +1300,8 @@
 		17AE207E1A1E8DDD00BC3C36 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				17AE207B1A1E8DDA00BC3C36 /* TADocument.h */,
-				17AE207C1A1E8DDA00BC3C36 /* TADocument.m */,
+				17AE207F1A1E8EF200BC3C36 /* TADocument.h */,
+				17AE20801A1E8EF200BC3C36 /* TADocument.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1463,7 +1463,7 @@
 				179047461A1E881A00615742 /* AKDelay.m in Sources */,
 				179047691A1E881A00615742 /* AKStereoAudio.m in Sources */,
 				179047641A1E881A00615742 /* AKAudio.m in Sources */,
-				17AE207D1A1E8DDA00BC3C36 /* TADocument.m in Sources */,
+				17AE20811A1E8EF200BC3C36 /* TADocument.m in Sources */,
 				1790473E1A1E881A00615742 /* AKAudioOutput.m in Sources */,
 				179047631A1E881A00615742 /* AKArray.m in Sources */,
 				1790476F1A1E881A00615742 /* AKLineSegmentTable.m in Sources */,

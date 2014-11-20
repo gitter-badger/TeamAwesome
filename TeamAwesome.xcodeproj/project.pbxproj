@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1785C3081A1E84B100E7099D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1785C3071A1E84B100E7099D /* main.m */; };
 		1785C30B1A1E84B100E7099D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1785C30A1A1E84B100E7099D /* AppDelegate.m */; };
-		1785C30E1A1E84B100E7099D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1785C30D1A1E84B100E7099D /* ViewController.m */; };
 		1785C3111A1E84B100E7099D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1785C30F1A1E84B100E7099D /* Main.storyboard */; };
 		1785C3131A1E84B100E7099D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1785C3121A1E84B100E7099D /* Images.xcassets */; };
 		1785C3161A1E84B100E7099D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1785C3141A1E84B100E7099D /* LaunchScreen.xib */; };
@@ -163,6 +162,9 @@
 		17AE20761A1E8B8F00BC3C36 /* TAPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE20751A1E8B8F00BC3C36 /* TAPreferences.m */; };
 		17AE207A1A1E8C4600BC3C36 /* TADocumentStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE20791A1E8C4600BC3C36 /* TADocumentStore.m */; };
 		17AE20811A1E8EF200BC3C36 /* TADocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE20801A1E8EF200BC3C36 /* TADocument.m */; };
+		580FB89C1A1E990500A465D2 /* PlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 580FB8981A1E990500A465D2 /* PlaybackViewController.m */; };
+		580FB89D1A1E990500A465D2 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 580FB8991A1E990500A465D2 /* KeyboardViewController.m */; };
+		580FB89E1A1E990500A465D2 /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580FB89A1A1E990500A465D2 /* KeyboardViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,8 +183,6 @@
 		1785C3071A1E84B100E7099D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1785C3091A1E84B100E7099D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1785C30A1A1E84B100E7099D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1785C30C1A1E84B100E7099D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1785C30D1A1E84B100E7099D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1785C3101A1E84B100E7099D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1785C3121A1E84B100E7099D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1785C3151A1E84B100E7099D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -511,6 +511,11 @@
 		17AE20791A1E8C4600BC3C36 /* TADocumentStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADocumentStore.m; sourceTree = "<group>"; };
 		17AE207F1A1E8EF200BC3C36 /* TADocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADocument.h; sourceTree = "<group>"; };
 		17AE20801A1E8EF200BC3C36 /* TADocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADocument.m; sourceTree = "<group>"; };
+		580FB8971A1E990500A465D2 /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		580FB8981A1E990500A465D2 /* PlaybackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaybackViewController.m; sourceTree = "<group>"; };
+		580FB8991A1E990500A465D2 /* KeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		580FB89A1A1E990500A465D2 /* KeyboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
+		580FB89B1A1E990500A465D2 /* PlaybackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaybackViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -557,8 +562,11 @@
 				17AE20771A1E8C2600BC3C36 /* Store */,
 				1785C3091A1E84B100E7099D /* AppDelegate.h */,
 				1785C30A1A1E84B100E7099D /* AppDelegate.m */,
-				1785C30C1A1E84B100E7099D /* ViewController.h */,
-				1785C30D1A1E84B100E7099D /* ViewController.m */,
+				580FB89B1A1E990500A465D2 /* PlaybackViewController.h */,
+				580FB8981A1E990500A465D2 /* PlaybackViewController.m */,
+				580FB8971A1E990500A465D2 /* KeyboardViewController.h */,
+				580FB8991A1E990500A465D2 /* KeyboardViewController.m */,
+				580FB89A1A1E990500A465D2 /* KeyboardViewController.xib */,
 				17AE207E1A1E8DDD00BC3C36 /* Model */,
 				1785C30F1A1E84B100E7099D /* Main.storyboard */,
 				1785C3121A1E84B100E7099D /* Images.xcassets */,
@@ -1389,6 +1397,7 @@
 				179047271A1E881A00615742 /* marmstk1.wav in Resources */,
 				179046EF1A1E881A00615742 /* LICENSE.TXT in Resources */,
 				1785C3111A1E84B100E7099D /* Main.storyboard in Resources */,
+				580FB89E1A1E990500A465D2 /* KeyboardViewController.xib in Resources */,
 				179047251A1E881A00615742 /* mandpluk.aif in Resources */,
 				1785C3161A1E84B100E7099D /* LaunchScreen.xib in Resources */,
 				1785C3131A1E84B100E7099D /* Images.xcassets in Resources */,
@@ -1444,7 +1453,6 @@
 				179046E61A1E881A00615742 /* AKOrchestra.m in Sources */,
 				179046F81A1E881A00615742 /* AKAssignment.m in Sources */,
 				1790475B1A1E881A00615742 /* AKDeclick.m in Sources */,
-				1785C30E1A1E84B100E7099D /* ViewController.m in Sources */,
 				1790472B1A1E881A00615742 /* AKDroplet.m in Sources */,
 				179047721A1E881A00615742 /* AKSoundFileTable.m in Sources */,
 				179046EB1A1E881A00615742 /* AKTools.m in Sources */,
@@ -1454,6 +1462,7 @@
 				179047581A1E881A00615742 /* AKBandRejectButterworthFilter.m in Sources */,
 				1790473A1A1E881A00615742 /* AKControlSegmentArray.m in Sources */,
 				1790471B1A1E881A00615742 /* AKSineOscillator.m in Sources */,
+				580FB89C1A1E990500A465D2 /* PlaybackViewController.m in Sources */,
 				1790470D1A1E881A00615742 /* AKWarp.m in Sources */,
 				179046E71A1E881A00615742 /* AKSampler.m in Sources */,
 				179047591A1E881A00615742 /* AKHighPassButterworthFilter.m in Sources */,
@@ -1492,6 +1501,7 @@
 				179047281A1E881A00615742 /* AKBamboo.m in Sources */,
 				179047301A1E881A00615742 /* AKStick.m in Sources */,
 				179047111A1E881A00615742 /* AKLinearADSRControlEnvelope.m in Sources */,
+				580FB89D1A1E990500A465D2 /* KeyboardViewController.m in Sources */,
 				179047081A1E881A00615742 /* AKFSignalFromMonoWithAttackAnalysis.m in Sources */,
 				179047001A1E881A00615742 /* AKProduct.m in Sources */,
 				179047491A1E881A00615742 /* AKDopplerEffect.m in Sources */,

@@ -7,8 +7,15 @@
 //
 
 #import "KeyboardViewController.h"
+#import "AKFoundation.h"
+#import "Instrument.h"
+#import "AKTools.h"
 
 @interface KeyboardViewController ()
+{
+    Instrument *newInstrument;
+    BOOL isNewInstrumentPlaying;
+}
 
 @property (nonatomic) int counter;
 @property (nonatomic) NSMutableArray *tempSounds;
@@ -29,6 +36,12 @@
     for (int i = 0; i < 32; i++) {
         [self.tempSounds addObject:@""];
     }
+    
+    AKOrchestra *orch = [[AKOrchestra alloc] init];
+    newInstrument  = [[Instrument alloc] init];
+    
+    [orch addInstrument:newInstrument];
+    [[AKManager sharedAKManager] runOrchestra:orch];
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -42,6 +55,7 @@
 }
 
 - (IBAction)cKeyTapped {
+    [newInstrument playNote:261.83];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"c"];
 }
 

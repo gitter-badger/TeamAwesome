@@ -160,6 +160,9 @@
 		179047731A1E881A00615742 /* AKWindowsTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 179046DB1A1E881A00615742 /* AKWindowsTable.m */; };
 		179047741A1E881A00615742 /* AKInstrumentProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 179046DE1A1E881A00615742 /* AKInstrumentProperty.m */; };
 		179047751A1E881A00615742 /* AKNoteProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 179046E01A1E881A00615742 /* AKNoteProperty.m */; };
+		17AE20761A1E8B8F00BC3C36 /* TAPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE20751A1E8B8F00BC3C36 /* TAPreferences.m */; };
+		17AE207A1A1E8C4600BC3C36 /* TADocumentStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE20791A1E8C4600BC3C36 /* TADocumentStore.m */; };
+		17AE207D1A1E8DDA00BC3C36 /* TADocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AE207C1A1E8DDA00BC3C36 /* TADocument.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -502,6 +505,12 @@
 		179046DE1A1E881A00615742 /* AKInstrumentProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKInstrumentProperty.m; sourceTree = "<group>"; };
 		179046DF1A1E881A00615742 /* AKNoteProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKNoteProperty.h; sourceTree = "<group>"; };
 		179046E01A1E881A00615742 /* AKNoteProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKNoteProperty.m; sourceTree = "<group>"; };
+		17AE20741A1E8B8F00BC3C36 /* TAPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPreferences.h; sourceTree = "<group>"; };
+		17AE20751A1E8B8F00BC3C36 /* TAPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPreferences.m; sourceTree = "<group>"; };
+		17AE20781A1E8C4600BC3C36 /* TADocumentStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADocumentStore.h; sourceTree = "<group>"; };
+		17AE20791A1E8C4600BC3C36 /* TADocumentStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADocumentStore.m; sourceTree = "<group>"; };
+		17AE207B1A1E8DDA00BC3C36 /* TADocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADocument.h; sourceTree = "<group>"; };
+		17AE207C1A1E8DDA00BC3C36 /* TADocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADocument.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -545,10 +554,12 @@
 		1785C3041A1E84B100E7099D /* TeamAwesome */ = {
 			isa = PBXGroup;
 			children = (
+				17AE20771A1E8C2600BC3C36 /* Store */,
 				1785C3091A1E84B100E7099D /* AppDelegate.h */,
 				1785C30A1A1E84B100E7099D /* AppDelegate.m */,
 				1785C30C1A1E84B100E7099D /* ViewController.h */,
 				1785C30D1A1E84B100E7099D /* ViewController.m */,
+				17AE207E1A1E8DDD00BC3C36 /* Model */,
 				1785C30F1A1E84B100E7099D /* Main.storyboard */,
 				1785C3121A1E84B100E7099D /* Images.xcassets */,
 				1785C3141A1E84B100E7099D /* LaunchScreen.xib */,
@@ -1275,6 +1286,26 @@
 			path = Properties;
 			sourceTree = "<group>";
 		};
+		17AE20771A1E8C2600BC3C36 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				17AE20741A1E8B8F00BC3C36 /* TAPreferences.h */,
+				17AE20751A1E8B8F00BC3C36 /* TAPreferences.m */,
+				17AE20781A1E8C4600BC3C36 /* TADocumentStore.h */,
+				17AE20791A1E8C4600BC3C36 /* TADocumentStore.m */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		17AE207E1A1E8DDD00BC3C36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17AE207B1A1E8DDA00BC3C36 /* TADocument.h */,
+				17AE207C1A1E8DDA00BC3C36 /* TADocument.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1432,10 +1463,12 @@
 				179047461A1E881A00615742 /* AKDelay.m in Sources */,
 				179047691A1E881A00615742 /* AKStereoAudio.m in Sources */,
 				179047641A1E881A00615742 /* AKAudio.m in Sources */,
+				17AE207D1A1E8DDA00BC3C36 /* TADocument.m in Sources */,
 				1790473E1A1E881A00615742 /* AKAudioOutput.m in Sources */,
 				179047631A1E881A00615742 /* AKArray.m in Sources */,
 				1790476F1A1E881A00615742 /* AKLineSegmentTable.m in Sources */,
 				179046EA1A1E881A00615742 /* LevelMeter.m in Sources */,
+				17AE207A1A1E8C4600BC3C36 /* TADocumentStore.m in Sources */,
 				179047751A1E881A00615742 /* AKNoteProperty.m in Sources */,
 				179047471A1E881A00615742 /* AKVariableDelay.m in Sources */,
 				179047221A1E881A00615742 /* AKStruckMetalBar.m in Sources */,
@@ -1476,6 +1509,7 @@
 				1790475F1A1E881A00615742 /* AKParallelCombLowPassFilterReverb.m in Sources */,
 				1790475A1A1E881A00615742 /* AKLowPassButterworthFilter.m in Sources */,
 				179047501A1E881A00615742 /* AKLowPassControlFilter.m in Sources */,
+				17AE20761A1E8B8F00BC3C36 /* TAPreferences.m in Sources */,
 				179046FB1A1E881A00615742 /* AKMaxControl.m in Sources */,
 				179046E41A1E881A00615742 /* AKMidi.m in Sources */,
 				1790474B1A1E881A00615742 /* AKCombFilter.m in Sources */,

@@ -59,46 +59,57 @@
 }
 
 - (IBAction)cSharpKeyTapped {
+    [newInstrument playNote:277.18];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"c#"];
 }
 
 - (IBAction)dKeyTapped {
+    [newInstrument playNote:293.66];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"d"];
 }
 
 - (IBAction)dSharpKeyTapped {
+    [newInstrument playNote:311.13];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"c#"];
 }
 
 - (IBAction)eKeyTapped {
+    [newInstrument playNote:329.63];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"e"];
 }
 
 - (IBAction)fKeyTapped {
+    [newInstrument playNote:349.23];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"f"];
 }
 
 - (IBAction)fSharpKeyTapped {
+    [newInstrument playNote:369.99];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"f#"];
 }
 
 - (IBAction)gKeyTapped {
+    [newInstrument playNote:392.00];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"g"];
 }
 
 - (IBAction)gSharpKeyTapped {
+    [newInstrument playNote:415.30];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"g#"];
 }
 
 - (IBAction)aKeyTapped {
+    [newInstrument playNote:440.00];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"a"];
 }
 
 - (IBAction)aSharpKeyTapped {
+    [newInstrument playNote:466.16];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"a#"];
 }
 
 - (IBAction)bKeyTapped {
+    [newInstrument playNote:493.88];
     [self.tempSounds replaceObjectAtIndex:self.counter withObject:@"b"];
 }
 

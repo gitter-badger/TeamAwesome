@@ -20,7 +20,8 @@ typedef NS_ENUM(NSInteger, NoteType) {
     NoteTypeF,
     NoteTypeFSharp,
     NoteTypeG,
-    NoteTypeGSharp
+    NoteTypeGSharp,
+    NoteTypeRest
 };
 
 @interface MusicNote : NSObject

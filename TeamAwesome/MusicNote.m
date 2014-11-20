@@ -46,6 +46,8 @@
             return @"G";
         case NoteTypeGSharp:
             return @"G#";
+        case NoteTypeRest:
+            return @"Rest";
     }
     return nil;
 }
@@ -75,6 +77,8 @@
         case NoteTypeG:
             return 0.f;
         case NoteTypeGSharp:
+            return 0.f;
+        case NoteTypeRest:
             return 0.f;
     }
     return 0.f;

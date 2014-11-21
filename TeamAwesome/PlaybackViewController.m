@@ -11,6 +11,7 @@
 #import "MusicNote.h"
 #import "AKTools.h"
 #import "Instrument.h"
+#import "TADocumentStore.h"
 
 @interface PlaybackViewController () <KeyboardViewControllerDelegate>
 
@@ -49,7 +50,15 @@
     for (int i=0; i<16; i++) {
         [self.notes addObject:[[MusicNote alloc] initWithNoteType:NoteTypeRest]];
     }
+    
+//    TADocumentStore *store = [TADocumentStore sharedDocumentStorage];
+//    if ([store.documentURLs firstObject]) {
+//        TADocument *doc = [[TADocument alloc] initWithFileURL:[store.documentURLs firstObject]];
+//        [self setDocument:doc];
+//    }
 }
+
+
 
 -(void)viewWillDisappear:(BOOL)animated
 {
@@ -72,11 +81,16 @@
 }
 
 - (IBAction)playNoteTapped:(id)sender {
-    
+    for (MusicNote *note in self.notes) {
+        [self.instrument playNote:note.frequency];
+        sleep(1);
+    }
 }
 
 - (IBAction)saveSongTapped:(id)sender {
-    
+    [self syncTextViewWithDocument];
+    [self.document saveToURL:[self.document fileURL]
+            forSaveOperation:UIDocumentSaveForOverwriting completionHandler:NULL];
 }
 
 - (void)didSelectNote:(MusicNote *)note {
@@ -86,7 +100,7 @@
 }
 
 - (void)updateCurrentNoteAndPosition {
-    self.notePositionLabel.text = [NSString stringWithFormat:@"Note Position: %ld/16", (long)self.notePosition + 1];
+    self.notePositionLabel.text = [NSString stringWithFormat:@"Note Position: %ld/15", (long)self.notePosition];
     
     MusicNote *currentNote = self.notes[self.notePosition];
     self.currentNoteLabel.text = [NSString stringWithFormat:@"Current Note: %@", currentNote.noteName];
